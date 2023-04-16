@@ -1,0 +1,34 @@
+name: Node@v14 Test
+on: 
+  push:
+    branches:
+      - 'main'
+  pull_request:
+    branches:
+      - 'main'
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    name: Test on Ubuntu Latest
+    steps:
+      - name: Checkout Codebase
+        uses: actions/checkout@v3
+
+      - name: Setup Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with: 
+          node-version: 15
+
+      # - name: Install npm
+      #   run: npm install -g npm@6.14.18
+
+      - name: Install Dependencies
+        run: | 
+          npm ci --ignore-scripts
+          cd server
+          npm ci --ignore-scripts
+          cd ../client
+          npm ci --ignore-scripts
+
+      - name: Run Test Suites
+        run: npm test
