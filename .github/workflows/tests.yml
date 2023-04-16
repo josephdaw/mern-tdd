@@ -17,14 +17,12 @@ jobs:
         uses: actions/setup-node@v3
         with: 
           node-version: 14.18
-          
+
       - name: Install NPM
         run: npm install -g npm
 
       - name: Install Dependencies
-        run: |
-          cd server
-          npm ci
+        run: npm ci
 
       - name: Run Test Suites
         run: npm test
