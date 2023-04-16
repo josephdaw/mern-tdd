@@ -19,7 +19,13 @@ jobs:
           node-version: 14.18
 
       - name: Install Dependencies
-        run: npm ci
+        run: |
+          cd client
+          npm ci
+          cd ../server
+          npm ci
+          cd ..
+          npm ci
 
       - name: Run Test Suites
         run: npm test
