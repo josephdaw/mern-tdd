@@ -12,7 +12,7 @@ jobs:
     name: Test on Ubuntu Latest
     strategy:
       matrix:
-        node-version: [14.x, 15.x, 16.x]
+        node-version: [14, 15, 16]
     steps:
       - name: Checkout Codebase
         uses: actions/checkout@v3
@@ -21,7 +21,6 @@ jobs:
         uses: actions/setup-node@v3
         with: 
           node-version: ${{ matrix.node-version }}
-          npm: latest
 
       - name: Install Dependencies
         run: | 
