@@ -18,9 +18,7 @@ jobs:
         uses: actions/setup-node@v3
         with: 
           node-version: latest
-
-      - name: Install NPM
-        run: npm install -g npm
+          with-npm: true
 
       - name: Install Dependencies
         run: | 
