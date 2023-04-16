@@ -12,5 +12,8 @@
   },
   "keywords": [],
   "author": "Joseph Daw",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
 }
