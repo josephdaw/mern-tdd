@@ -1,0 +1,22 @@
+name: Running Tests
+on: 
+  push:
+    branches:
+      - 'main'
+  pull_request:
+    branches:
+      - 'main'
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Codebase
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with: 
+          node-version: 14.18
+      - name: Install Dependencies
+        run: npm ci
+      - name: Run Test Suites
+        run: npm test
