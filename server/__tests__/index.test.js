@@ -11,14 +11,14 @@ async function removeAllCollections() {
     }
   }
 
-beforeAll(async () => {
-    await mongoose.connect(CONNECTION_URL)
-})
+// beforeAll(async () => {
+//     await mongoose.connect(CONNECTION_URL)
+// })
 
-afterAll(async () => {
-    await removeAllCollections(mongoose.connection.collections)
-    await mongoose.connection.close()
-})
+// afterAll(async () => {
+//     await removeAllCollections(mongoose.connection.collections)
+//     await mongoose.connection.close()
+// })
 
 describe('Testing the test module', () => {
 
