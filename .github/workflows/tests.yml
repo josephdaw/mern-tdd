@@ -20,7 +20,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          server
+          cd server
           npm ci
 
       - name: Run Test Suites
