@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server/server.js",
     "install": "cd server && npm i && cd ../client && npm i",
+    "ci": "cd server && npm ci && cd ../client && npm ci",
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build",
     "test": "jest --verbose"
