@@ -4,6 +4,7 @@
 ![Express](https://img.shields.io/badge/express-000000?&logo=express&logoColor=white)
 ## Status
 [![Node@Latest](https://github.com/josephdaw/mern-tdd/actions/workflows/latest.yml/badge.svg)](https://github.com/josephdaw/mern-tdd/actions/workflows/latest.yml)
+[![Node@v14 Test](https://github.com/josephdaw/mern-tdd/actions/workflows/node-14.yml/badge.svg)](https://github.com/josephdaw/mern-tdd/actions/workflows/node-14.yml)
 
 ## Table of Contents
 - [Description](#description)
