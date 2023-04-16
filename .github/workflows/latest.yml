@@ -1,4 +1,4 @@
-name: Node@v14.18 Test
+name: Node@Latest Test
 on: 
   push:
     branches:
@@ -7,7 +7,8 @@ on:
     branches:
       - 'main'
 jobs:
-  tests:
+  build_and_test:
+    name: Build and Test Latest Ubuntu and Node Versions
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Codebase
@@ -16,7 +17,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with: 
-          node-version: 14.18
+          node-version: latest
 
       - name: Install NPM
         run: npm install -g npm

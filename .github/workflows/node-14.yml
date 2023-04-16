@@ -1,4 +1,4 @@
-name: Node@Latest Test
+name: Node@v14.x Test
 on: 
   push:
     branches:
@@ -7,8 +7,12 @@ on:
     branches:
       - 'main'
 jobs:
-  setup environment:
+  build_and_test:
     runs-on: ubuntu-latest
+    name: Test on Ubuntu Latest - Node@12.x
+    strategy:
+      matrix:
+        node-version: [12.x]
     steps:
       - name: Checkout Codebase
         uses: actions/checkout@v3
@@ -16,13 +20,11 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with: 
-          node-version: latest
+          node-version: 14.18
 
       - name: Install NPM
         run: npm install -g npm
 
-  install:
-    steps:
       - name: Install Dependencies
         run: | 
           npm ci --ignore-scripts
@@ -30,7 +32,6 @@ jobs:
           npm ci --ignore-scripts
           cd ../client
           npm ci --ignore-scripts
-  testing:
-    steps:
+
       - name: Run Test Suites
         run: npm test
