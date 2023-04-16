@@ -13,7 +13,7 @@
   "keywords": [],
   "author": "Joseph Daw",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "jest": "^29.5.0"
   }
 }
