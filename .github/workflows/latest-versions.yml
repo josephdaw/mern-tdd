@@ -7,7 +7,7 @@ on:
     branches:
       - 'main'
 jobs:
-  tests:
+  setup environment:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Codebase
@@ -21,6 +21,7 @@ jobs:
       - name: Install NPM
         run: npm install -g npm
 
+  install:
       - name: Install Dependencies
         run: | 
           npm ci --ignore-scripts
@@ -28,6 +29,6 @@ jobs:
           npm ci --ignore-scripts
           cd ../client
           npm ci --ignore-scripts
-
+  testing:
       - name: Run Test Suites
         run: npm test
