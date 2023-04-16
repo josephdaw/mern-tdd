@@ -2,6 +2,7 @@
 ![React](https://img.shields.io/badge/react-%61DAFB.svg?&logo=react&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F.svg?&logo=node.js&logoColor=white)
 ![Express](https://img.shields.io/badge/express-000000?&logo=express&logoColor=white)
+[![Tests](https://github.com/josephdaw/mern-tdd/actions/workflows/tests.yml/badge.svg)](https://github.com/josephdaw/mern-tdd/actions/workflows/tests.yml)
 
 ## Table of Contents
 - [Description](#description)
