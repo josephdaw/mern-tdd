@@ -1,0 +1,15 @@
+{
+  "name": "mern-tdd",
+  "version": "1.0.0",
+  "description": "a basic MERN stack for testing TDD",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
