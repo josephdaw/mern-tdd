@@ -9,18 +9,18 @@ on:
 jobs:
   build_and_test:
     runs-on: ubuntu-latest
-    name: Test on Ubuntu Latest - Node@12.x
+    name: Test on Ubuntu Latest
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [12.x, 13.x, 14.x, 15.x]
     steps:
       - name: Checkout Codebase
         uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Setup Node ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with: 
-          node-version: 14.18
+          node-version: ${{ matrix.node-version }}
 
       - name: Install NPM
         run: npm install -g npm
