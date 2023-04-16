@@ -3,7 +3,7 @@
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F.svg?&logo=node.js&logoColor=white)
 ![Express](https://img.shields.io/badge/express-000000?&logo=express&logoColor=white)
 ## Status
-[![Tests](https://github.com/josephdaw/mern-tdd/actions/workflows/tests.yml/badge.svg)](https://github.com/josephdaw/mern-tdd/actions/workflows/tests.yml)
+[![Node@Latest](https://github.com/josephdaw/mern-tdd/actions/workflows/latest.yml/badge.svg)](https://github.com/josephdaw/mern-tdd/actions/workflows/latest.yml)
 
 ## Table of Contents
 - [Description](#description)

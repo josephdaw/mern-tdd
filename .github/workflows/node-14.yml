@@ -1,4 +1,4 @@
-name: Node@v14.x Test
+name: Node@v14 Test
 on: 
   push:
     branches:
@@ -10,9 +10,6 @@ jobs:
   build_and_test:
     runs-on: ubuntu-latest
     name: Test on Ubuntu Latest
-    strategy:
-      matrix:
-        node-version: [14, 15, 16]
     steps:
       - name: Checkout Codebase
         uses: actions/checkout@v3
@@ -20,7 +17,10 @@ jobs:
       - name: Setup Node ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with: 
-          node-version: ${{ matrix.node-version }}
+          node-version: 14
+          
+      - name: Install npm
+        run: npm install -g npm@7.5.4
 
       - name: Install Dependencies
         run: | 
