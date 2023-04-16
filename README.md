@@ -12,5 +12,8 @@ Universal Trade Manager is a platform that will allow you to control all of your
 
 Visit the live site at: https://universaltrademanager.com
 
+## Testing
+Jest
+
 ## License
 This project is released under the [MIT License](LICENSE).
