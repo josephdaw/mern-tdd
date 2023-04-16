@@ -1,4 +1,4 @@
-name: Node@v15 Test
+name: Node@v16 Test
 on: 
   push:
     branches:
@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with: 
-          node-version: 15
+          node-version: 16
 
       - name: Install Dependencies
         run: | 
