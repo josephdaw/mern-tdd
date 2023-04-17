@@ -4,7 +4,7 @@
   "description": "a basic MERN stack for testing TDD",
   "main": "server/server.js",
   "scripts": {
-    "start": "node server/server.js",
+    "start": "node server/index.js",
     "install": "cd server && npm i && cd ../client && npm i",
     "clean-install": "cd server && npm ci && cd ../client && npm ci",
     "seed": "cd server && npm run seed",
