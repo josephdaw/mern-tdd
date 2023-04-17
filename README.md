@@ -14,9 +14,7 @@
 - [License](#license)
 
 ## Description
-Universal Trade Manager is a platform that will allow you to control all of your trading activity from one convenient location. 
-
-Visit the live site at: https://universaltrademanager.com
+This is a basic MERN stack skeleton, set up ready for easily building a new project.
 
 ## Testing
 The code base is being tested using Jest and GitHub Actions.
