@@ -1,4 +1,4 @@
-name: Node@v15 Test
+name: Node@v15
 on: 
   push:
     branches:

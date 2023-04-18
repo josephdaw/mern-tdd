@@ -1,4 +1,4 @@
-name: Node@v14 with NPM@v7.24.2 Test
+name: Node@v14 with NPM@v7.24.2
 on: 
   push:
     branches:
